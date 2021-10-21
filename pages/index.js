@@ -1,9 +1,16 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { Toolbar } from '../components/toolbar'
 import styles from '../styles/Home.module.css'
+
 
 export default function Home() {
   return (
-  <>Hello World</>
+  <div className="page-container">
+    <Toolbar />
+    <div className={styles.main}>
+      <h1>News App</h1>
+      <h3>Corporate stop shop for news articles</h3>
+    </div>
+  </div>
   )
 }
